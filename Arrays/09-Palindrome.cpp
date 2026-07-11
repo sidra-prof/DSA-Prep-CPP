@@ -33,7 +33,7 @@ int main(){
 }
 
 bool Palindrome(vector<int>&arr){
-    for(int i=0,j=arr.size();i<j;i++,j--){
+    for(int i=0,j=arr.size()-1;i<j;i++,j--){
         if(arr[i]!=arr[j]){
             return false;
         }
